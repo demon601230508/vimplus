@@ -172,8 +172,8 @@ nnoremap <leader>H :execute ":help " . expand("<cword>")<cr>
 nnoremap <leader>s :source $MYVIMRC<cr>
 
 " 安装、更新、删除插件
-nnoremap <leader><leader>i :PlugInstall<cr>
-nnoremap <leader><leader>u :PlugUpdate<cr>
+nnoremap <leader><leader>] :PlugInstall<cr>
+nnoremap <leader><leader>[ :PlugUpdate<cr>
 nnoremap <leader><leader>c :PlugClean<cr>
 
 " 分屏窗口移动
@@ -330,7 +330,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " LeaderF
-nnoremap <leader>f :LeaderfFile ~<cr>
+nnoremap <leader>f :LeaderfFile <cr>
 let g:Lf_WildIgnore = {
             \ 'dir': ['.svn','.git','.hg','.vscode','.wine','.deepinwine','.oh-my-zsh'],
             \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
@@ -361,9 +361,9 @@ nnoremap <leader>gg :GV?<cr>
 "add by me
 "gtags
 "definition
-nmap <silent><leader>] :Gtags <c-r><c-w><cr>                                                                                                      
+nmap <silent><leader>u :Gtags <c-r><c-w><cr>                                                                                                      
 "reference
-nmap <silent><leader>[ :Gtags -r <c-r><c-w><cr>
+nmap <silent><leader>i :Gtags -r <c-r><c-w><cr>
 "symbol
 nmap <silent><leader>p :Gtags -s <c-r><c-w><cr>
 
