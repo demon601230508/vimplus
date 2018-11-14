@@ -307,9 +307,9 @@ let g:DoxygenToolkit_commentType="Qt"
 
 "gtags
 "definition
-nmap <silent><leader>u :Gtags <c-r><c-w><cr>
+nmap <silent><leader>] :Gtags <c-r><c-w><cr>
 "reference
-nmap <silent><leader>i :Gtags -r <c-r><c-w><cr> ]"
+nmap <silent><leader>[ :Gtags -r <c-r><c-w><cr> ]"
 
 " a.vim: .h -> .cpp or .cpp -> .h
 nnoremap <silent> <Leader>a :A<CR>
