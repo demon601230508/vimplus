@@ -330,7 +330,8 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " LeaderF
-nnoremap <leader>f :LeaderfFile <cr>
+nnoremap <leader>f :LeaderfFile $HOME <cr>
+nnoremap <leader>v :LeaderfFile ./<cr>
 let g:Lf_WildIgnore = {
             \ 'dir': ['.svn','.git','.hg','.vscode','.wine','.deepinwine','.oh-my-zsh'],
             \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
@@ -372,3 +373,5 @@ nmap <silent><leader>p :Gtags -s <c-r><c-w><cr>
 if filereadable(expand($HOME . '/.vimrc.local'))
     source $HOME/.vimrc.local
 endif
+"add by demon
+source ~/.vimrc.demon
